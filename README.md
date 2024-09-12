@@ -72,5 +72,5 @@ cd client
 npm run dev
 ```
 
-**5. Output returns URL**
+**5. Output**:
 ![alt text](./images/output.png)
