@@ -8,6 +8,9 @@ exports.putObject = async(file,fileName) =>{
             Key: `${fileName}`,
             Body: file,
             ContentType: "image/jpg,jpeg,png",
+            // ContentType: "video/mp4,mkv", //For Video
+            // ContentType: "application/pdf,docx,xlsx", //For File
+            
         }
 
         const command = new PutObjectCommand(params);
