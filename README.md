@@ -1,14 +1,27 @@
+![logo](./images/logo.png)
+
 # Book Store
 
-## Introduction
+Book Store Application where users can Upload, Retireve and Delete Book Details.
 
-This is a Book Store web application where book images are stored in an AWS S3 bucket, the backend is built using Node.js and Express.js, and MongoDB is used as the database. This project allows users to upload, retrieve, and delete book images, with data securely stored and managed through the backend.
+## Description
+
+This is a MENN Stack web application where book images are stored in an AWS S3 bucket, the backend is built using Node.js and Express.js, and MongoDB is used as the database. This project allows users to upload, retrieve, and delete book images, with data securely stored and managed through the backend.
+
+## Table of Content
+
+- [Key Feature](#key-features-of-this-project-include)
+- [Technologies Used](#technologies-used)
+- [FlowChart](#flowchart)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Screen Shot](#screen-shot)
 
 ## Youtube Video
 
 Link: https://youtu.be/dhSF36aVYwE
 
-![alt text](./images/youtube-tumbnail.png)
+![Demo Video](./images/youtube-tumbnail.png)
 
 ### Key features of this project include:
 
@@ -26,13 +39,23 @@ Link: https://youtu.be/dhSF36aVYwE
 
 ## FlowChart
 
-![alt text](./images/flowchart.png)
+![Flowchart](./images/flowchart.png)
+The diagram illustrates a system architecture for managing file or image uploads using Node.js, S3 Bucket, and MongoDB.
+
+- The client sends an image or file to the Node.js server.
+- The server uploads the file to the S3 Bucket and saves its URL in MongoDB.
+- The client can request the URL to access the file or perform other operations like retrieving or deleting the file.
+
+## Prerequisites
+
+Node v20.10.0\
+Npm v10.8.1
 
 ## Installation
 
 **1. Clone the repository:**
 
-```
+```Bash
 git clone https://github.com/theadiga27/node-s3.git
 cd web-hosting
 ```
@@ -41,7 +64,7 @@ cd web-hosting
 
 1. Backend dependencies
 
-```
+```Bash
 npm install
 ```
 
@@ -72,5 +95,6 @@ cd client
 npm run dev
 ```
 
-**5. Output**:
-![alt text](./images/output.png)
+## Screen Shot
+
+![output](./images/output.png)
